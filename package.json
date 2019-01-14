@@ -1,0 +1,19 @@
+{
+  "name": "ynov_node_test1",
+  "version": "1.0.0",
+  "description": "nodejs test ynov",
+  "main": "launch.js",
+  "dependencies": {
+    "dateformat": "^3.0.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.3",
+    "nodemon": "^1.18.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon launch.js"
+  },
+  "author": "aspire cya",
+  "license": "ISC"
+}
