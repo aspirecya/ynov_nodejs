@@ -23,8 +23,7 @@ mongoose.connect('mongodb://aspirecya:hsgYR48XBJAA5fJ@ds253104.mlab.com:53104/mo
 });
 
 // routes
-app.get('/:name', (req,res) => { res.send(`Bonjour ${req.params.name}, bienvenue sur votre API de gestion de catalogue produit.`); });
-app.get('/', (req, res) => { res.send("Je ne parviens pas à vous identifier."); });
+app.get('/:name?', (req,res) => { if(req.params.name) { res.send(`Bonjour ${req.params.name}, bienvenue sur votre API de gestion de catalogue produit.`); } else { res.send("Je ne parviens pas à vous identifier.");  } });
 
 app.get('/api/products', productController.getProduct);
 app.post('/api/createproduct', productController.createProduct);
